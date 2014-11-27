@@ -96,12 +96,12 @@ libmm-venc-inc      := bionic/libc/include
 libmm-venc-inc      += bionic/libstdc++/include
 libmm-venc-inc      += $(LOCAL_PATH)/inc
 libmm-venc-inc      += $(OMX_VIDEO_PATH)/vidc/common/inc
-libmm-venc-inc      += hardware/qcom/media-caf-new/mm-core/inc
-libmm-venc-inc      += hardware/qcom/media-caf-new/libstagefrighthw
+libmm-venc-inc      += hardware/qcom/media-caf-old/mm-core/inc
+libmm-venc-inc      += hardware/qcom/media-caf-old/libstagefrighthw
 libmm-venc-inc      += hardware/qcom/display-caf-new/libgralloc
 libmm-venc-inc      += frameworks/native/include/media/hardware
 libmm-venc-inc      += frameworks/native/include/media/openmax
-libmm-venc-inc      += hardware/qcom/media-caf-new/libc2dcolorconvert
+libmm-venc-inc      += hardware/qcom/media-caf-old/libc2dcolorconvert
 libmm-venc-inc      += hardware/qcom/display-caf-new/libcopybit
 libmm-venc-inc      += frameworks/av/include/media/stagefright
 libmm-venc-inc      += $(TARGET_OUT_HEADERS)/qcom/display-caf-new/
@@ -139,7 +139,7 @@ include $(CLEAR_VARS)
 mm-venc-test720p-inc            := $(TARGET_OUT_HEADERS)/mm-core
 mm-venc-test720p-inc            += $(LOCAL_PATH)/inc
 mm-venc-test720p-inc            += $(OMX_VIDEO_PATH)/vidc/common/inc
-mm-venc-test720p-inc            += hardware/qcom/media-caf-new/mm-core/inc
+mm-venc-test720p-inc            += hardware/qcom/media-caf-old/mm-core/inc
 mm-venc-test720p-inc            += hardware/qcom/display-caf-new/libgralloc
 mm-venc-test720p-inc            += $(venc-inc)
 
@@ -171,7 +171,7 @@ venc-test-inc                   += $(venc-inc)
 LOCAL_MODULE                    := mm-video-encdrv-test
 LOCAL_MODULE_TAGS               := optional
 LOCAL_C_INCLUDES                := $(venc-test-inc)
-LOCAL_C_INCLUDES                += hardware/qcom/media-caf-new/mm-core/inc
+LOCAL_C_INCLUDES                += hardware/qcom/media-caf-old/mm-core/inc
 
 LOCAL_ADDITIONAL_DEPENDENCIES   := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 LOCAL_PRELINK_MODULE            := false
